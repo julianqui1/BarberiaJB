@@ -1,0 +1,60 @@
+import { Cortes } from '../models/cortes.interfaces';
+
+export const CORTES: Cortes[] = [
+  {
+    nombre: 'Corte Premium',
+    tipo_corte: 'Tipo 1',
+    descripcion: 'Descripción del corte',
+    imagen: 'URL de la imagen',
+    incluye: ['Servicio1', 'Servicio2', 'Servicio3', 'Servicio4'],
+    precio: '$130.000',
+  },
+  {
+    nombre: 'Corte Premium',
+    tipo_corte: 'Tipo 1',
+    descripcion: 'Descripción del corte',
+    imagen: 'URL de la imagen',
+    incluye: ['Servicio1', 'Servicio2', 'Servicio3', 'Servicio4'],
+    precio: '$130.000',
+  },
+  {
+    nombre: 'Corte Premium',
+    tipo_corte: 'Tipo 1',
+    descripcion: 'Descripción del corte',
+    imagen: 'URL de la imagen',
+    incluye: ['Servicio1', 'Servicio2', 'Servicio3', 'Servicio4'],
+    precio: '$130.000',
+  },
+  {
+    nombre: 'Corte Premium',
+    tipo_corte: 'Tipo 1',
+    descripcion: 'Descripción del corte',
+    imagen: 'URL de la imagen',
+    incluye: ['Servicio1', 'Servicio2', 'Servicio3', 'Servicio4'],
+    precio: '$130.000',
+  },
+  {
+    nombre: 'Corte Premium',
+    tipo_corte: 'Tipo 1',
+    descripcion: 'Descripción del corte',
+    imagen: 'URL de la imagen',
+    incluye: ['Servicio1', 'Servicio2', 'Servicio3', 'Servicio4'],
+    precio: '$130.000',
+  },
+  {
+    nombre: 'Corte Premium',
+    tipo_corte: 'Tipo 1',
+    descripcion: 'Descripción del corte',
+    imagen: 'URL de la imagen',
+    incluye: ['Servicio1', 'Servicio2', 'Servicio3', 'Servicio4'],
+    precio: '$130.000',
+  },
+  {
+    nombre: 'Corte Premium',
+    tipo_corte: 'Tipo 1',
+    descripcion: 'Descripción del corte',
+    imagen: 'URL de la imagen',
+    incluye: ['Servicio1', 'Servicio2', 'Servicio3', 'Servicio4'],
+    precio: '$130.000',
+  },
+];
