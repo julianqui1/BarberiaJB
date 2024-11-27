@@ -18,8 +18,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
     UbicacionComponent,
     WelcomeComponent,
   ],
-  exports: [BebidasComponent],
+  exports: [BebidasComponent, WelcomeComponent],
   imports: [CommonModule],
-  exports: [WelcomeComponent],
 })
 export class ComponentsModule {}
