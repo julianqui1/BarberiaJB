@@ -23,6 +23,7 @@ import { CardsModule } from '../cards/cards.module';
     BebidasComponent,
     WelcomeComponent,
     ServiciosComponent,
+    BebidasComponent,
     PresentacionComponent,
   ],
   imports: [CommonModule, CardsModule],
