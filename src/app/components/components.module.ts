@@ -7,6 +7,7 @@ import { ProductosComponent } from './productos/productos.component';
 import { ServiciosComponent } from './servicios/servicios.component';
 import { UbicacionComponent } from './ubicacion/ubicacion.component';
 import { WelcomeComponent } from './welcome/welcome.component';
+import { CardsModule } from '../cards/cards.module';
 
 @NgModule({
   declarations: [
@@ -18,14 +19,12 @@ import { WelcomeComponent } from './welcome/welcome.component';
     UbicacionComponent,
     WelcomeComponent,
   ],
-
   exports: [
     BebidasComponent,
     WelcomeComponent,
     ServiciosComponent,
-    BebidasComponent,
-          PresentacionComponent
+    PresentacionComponent,
   ],
-  imports: [CommonModule],
+  imports: [CommonModule, CardsModule],
 })
 export class ComponentsModule {}
