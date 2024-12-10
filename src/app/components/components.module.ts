@@ -26,6 +26,7 @@ import { CardsModule } from '../cards/cards.module';
     BebidasComponent,
     PresentacionComponent,
     ProductosComponent,
+    HorarioComponent,
   ],
   imports: [CommonModule, CardsModule],
 })
