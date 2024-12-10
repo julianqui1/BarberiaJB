@@ -7,6 +7,6 @@ import { ProductoComponent } from './producto/producto.component';
 @NgModule({
   declarations: [ServicioComponent, BebidaComponent, ProductoComponent],
   imports: [CommonModule],
-  exports: [BebidaComponent, ServicioComponent],
+  exports: [BebidaComponent, ServicioComponent, ProductoComponent],
 })
 export class CardsModule {}
