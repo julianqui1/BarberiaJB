@@ -23,10 +23,10 @@ import { CardsModule } from '../cards/cards.module';
     BebidasComponent,
     WelcomeComponent,
     ServiciosComponent,
-    BebidasComponent,
     PresentacionComponent,
     ProductosComponent,
     HorarioComponent,
+    UbicacionComponent,
   ],
   imports: [CommonModule, CardsModule],
 })
