@@ -25,10 +25,10 @@ import { ContactoComponent } from './contacto/contacto.component';
     BebidasComponent,
     WelcomeComponent,
     ServiciosComponent,
-    BebidasComponent,
     PresentacionComponent,
     ProductosComponent,
     HorarioComponent,
+    UbicacionComponent,
     ContactoComponent
   ],
   imports: [CommonModule, CardsModule],
