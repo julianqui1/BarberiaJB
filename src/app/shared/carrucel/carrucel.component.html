@@ -1,0 +1,41 @@
+<div id="{{ carrucelId }}" class="carrucel slide" data-bs-ride="carrucel">
+  <div class="carrucel-inner">
+    <div
+      *ngFor="let item of items; let i = index"
+      class="carrucel-item"
+      [class.active]="i === 0"
+    >
+      <!-- Tu card reutilizable -->
+      <div class="w-80 h-60 mx-auto">
+        <img
+          class="rounded-lg w-full max-h-full object-cover"
+          [src]="item.image"
+          [alt]="item.title"
+        />
+        <div class="py-4">
+          <h3 class="text-slate-50 text-2xl">{{ item.title }}</h3>
+          <p class="text-gray-300">{{ item.description }}</p>
+          <p class="text-slate-50">${{ item.price }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button
+    class="carousel-control-prev"
+    type="button"
+    [attr.data-bs-target]="'#' + carrucelId"
+    data-bs-slide="prev"
+  >
+    <span class="carrucel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button
+    class="carrucel-control-next"
+    type="button"
+    [attr.data-bs-target]="'#' + carrucelId"
+    data-bs-slide="next"
+  >
+    <span class="carrucel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
