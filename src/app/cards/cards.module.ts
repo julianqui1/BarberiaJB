@@ -5,6 +5,7 @@ import { ServicioComponent } from './servicio/servicio.component';
 import { BebidaComponent } from './bebida/bebida.component';
 import { ProductoComponent } from './producto/producto.component';
 import { ServicioDialogoComponent } from './servicio-dialogo/servicio-dialogo.component';
+import { CardComponent } from './card/card.component';
 
 @NgModule({
   declarations: [
@@ -12,6 +13,7 @@ import { ServicioDialogoComponent } from './servicio-dialogo/servicio-dialogo.co
     BebidaComponent,
     ProductoComponent,
     ServicioDialogoComponent,
+    CardComponent,
   ],
   imports: [CommonModule],
   exports: [
@@ -19,6 +21,7 @@ import { ServicioDialogoComponent } from './servicio-dialogo/servicio-dialogo.co
     ServicioComponent,
     ProductoComponent,
     ServicioDialogoComponent,
+    CardComponent,
   ],
 })
 export class CardsModule {}

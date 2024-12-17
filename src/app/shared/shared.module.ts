@@ -8,6 +8,6 @@ import { CardsModule } from '../cards/cards.module';
 @NgModule({
   declarations: [HeaderComponent, FooterComponent, CarrucelComponent],
   imports: [CommonModule, CardsModule],
-  exports: [HeaderComponent],
+  exports: [HeaderComponent, CarrucelComponent],
 })
 export class SharedModule {}

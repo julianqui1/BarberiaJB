@@ -1,0 +1,12 @@
+<div class="w-80 h-60 mx-auto">
+  <img
+    class="rounded-lg w-full max-h-full object-cover"
+    [src]="item.url_img"
+    [alt]="item.nombre"
+  />
+  <div class="py-4">
+    <h3 class="text-slate-50 text-2xl">{{ item.nombre }}</h3>
+    <p class="text-gray-300">{{ item.descripcion }}</p>
+    <p class="text-slate-50">{{ item.precio }}</p>
+  </div>
+</div>
