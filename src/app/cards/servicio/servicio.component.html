@@ -2,12 +2,13 @@
   <!-- Contenedor de cada sección -->
   <section
     class="bg-gray-300 flex flex-col lg:flex-row p-4 w-[90%] md:w-[90%] lg:w-[45%] m-2 h-auto rounded-lg"
+    *ngFor="let corte of cortes"
   >
     <!-- Imagen -->
     <article class="w-full lg:w-2/5 p-2">
       <img
-        src="../../../assets/servicios/corte1.jpg"
-        alt="Corte 1"
+        [src]="corte.imagen"
+        [alt]="corte.nombre"
         class="w-full h-full object-cover rounded-lg"
       />
     </article>
@@ -15,78 +16,15 @@
     <article
       class="p-4 flex flex-col justify-center items-center w-full lg:w-3/5"
     >
-      <h3 class="text-center text-3xl">Corte 1</h3>
+      <h3 class="text-center text-3xl">{{ corte.nombre }}</h3>
       <ul class="text-lg">
-        <li>Asesoría profesional</li>
-        <li>Corte de cabello</li>
-        <li>Peinado especial</li>
-        <li>Mascarilla de Carbono</li>
-        <li>Limpieza de Rostro</li>
+        <!-- Limitar la cantidad de servicios mostrados -->
+        <li *ngFor="let servicio of corte.incluye.slice(0, 5)">
+          {{ servicio }}
+        </li>
       </ul>
       <div class="py-4">
         <app-servicio-dialogo></app-servicio-dialogo>
-      </div>
-    </article>
-  </section>
-
-  <section
-    class="bg-gray-300 flex flex-col lg:flex-row p-4 w-[90%] md:w-[90%] lg:w-[45%] m-2 h-auto rounded-lg"
-  >
-    <!-- Imagen -->
-    <article class="w-full lg:w-2/5 p-2">
-      <img
-        src="../../../assets/servicios/corte1.jpg"
-        alt="Corte 1"
-        class="w-full h-full object-cover rounded-lg"
-      />
-    </article>
-    <!-- Texto -->
-    <article
-      class="p-4 flex flex-col justify-center items-center w-full lg:w-3/5"
-    >
-      <h3 class="text-center text-3xl">Corte 1</h3>
-      <ul class="text-lg">
-        <li>Asesoría profesional</li>
-        <li>Corte de cabello</li>
-        <li>Peinado especial</li>
-        <li>Mascarilla de Carbono</li>
-        <li>Limpieza de Rostro</li>
-      </ul>
-      <div class="py-4">
-        <button class="text-black border-solid border-2 border-black w-32 h-12">
-          Más Info
-        </button>
-      </div>
-    </article>
-  </section>
-
-  <section
-    class="bg-gray-300 flex flex-col lg:flex-row p-4 w-[90%] md:w-[90%] lg:w-[45%] m-2 h-auto rounded-lg"
-  >
-    <!-- Imagen -->
-    <article class="w-full lg:w-2/5 p-2">
-      <img
-        src="../../../assets/servicios/corte1.jpg"
-        alt="Corte 1"
-        class="w-full h-full object-cover rounded-lg"
-      />
-    </article>
-    <!-- Texto -->
-    <article
-      class="p-4 flex flex-col justify-center items-center w-full lg:w-3/5"
-    >
-      <h3 class="text-center text-3xl">Corte 1</h3>
-      <ul class="text-lg">
-        <li>Asesoría profesional</li>
-        <li>Corte de cabello</li>
-        <li>Peinado especial</li>
-        <li>Mascarilla de Carbono</li>
-        <li>Limpieza de Rostro</li>
-      </ul>
-      <div class="py-4">
-        <button class="text-black border-solid border-2 border-black w-32 h-12">
-          Más Info
-        </button>
       </div>
     </article>
   </section>
