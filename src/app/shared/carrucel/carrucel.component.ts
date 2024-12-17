@@ -1,4 +1,4 @@
-import { Component, Input, TemplateRef } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-carrucel',
@@ -7,7 +7,22 @@ import { Component, Input, TemplateRef } from '@angular/core';
 })
 export class CarrucelComponent {
   @Input() items: any[] = [];
-  @Input() carrucelId: string = 'carrucel';
-  @Input() useTemplate: boolean = false;
-  @Input() itemTemplate!: TemplateRef<any>;
+  currentIndex = 0;
+  itemsToShow = 6;
+
+  nextSlide() {
+    if (this.currentIndex < this.items.length - this.itemsToShow) {
+      this.currentIndex++;
+    } else {
+      this.currentIndex = 0;
+    }
+  }
+
+  prevSlide() {
+    if (this.currentIndex > 0) {
+      this.currentIndex--;
+    } else {
+      this.currentIndex = this.items.length - this.itemsToShow;
+    }
+  }
 }
