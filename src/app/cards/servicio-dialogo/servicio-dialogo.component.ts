@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-servicio-dialogo',
@@ -6,13 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./servicio-dialogo.component.css'],
 })
 export class ServicioDialogoComponent {
-  isModalOpen: boolean = false;
-
-  openModal() {
-    this.isModalOpen = true;
-  }
+  @Input() corte: any; // Datos del corte seleccionado
+  @Input() isModalOpen: boolean = false; // Estado del diálogo
+  @Output() close = new EventEmitter<void>(); // Evento para cerrar el diálogo
 
   closeModal() {
-    this.isModalOpen = false;
+    this.close.emit(); // Emite el evento de cierre
   }
 }

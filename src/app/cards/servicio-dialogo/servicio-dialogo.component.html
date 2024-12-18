@@ -1,24 +1,27 @@
-<!-- Botón para abrir el modal -->
-<button
-  class="text-black border-solid border-2 border-black w-32 h-12"
-  (click)="openModal()"
->
-  Más Info
-</button>
-
-<!-- Modal (oculto por defecto) -->
 <div
   class="fixed inset-0 flex items-center justify-center bg-gray-800 bg-opacity-50 transition-opacity duration-300"
   [ngClass]="{ hidden: !isModalOpen, block: isModalOpen }"
 >
-  <div class="bg-white rounded-lg shadow-lg w-3/5 p-6">
-    <h2 class="text-xl font-semibold mb-4">Información</h2>
-    <p class="mb-4">Aquí va la información que quieres mostrar.</p>
-    <button
-      class="px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600"
-      (click)="closeModal()"
-    >
-      Cerrar
-    </button>
+  <div class="bg-white rounded-lg shadow-lg w-3/5 p-6 flex flex-row">
+    <article class="w-full lg:w-2/5 p-2">
+      <img
+        src="../../../assets/servicios/corte1.jpg"
+        alt="img"
+        class="w-full h-full object-cover rounded-lg"
+      />
+    </article>
+    <article class="mx-4">
+      <h2 class="text-center text-3xl mb-4">{{ corte?.nombre }}</h2>
+      <p class="mb-4">{{ corte?.descripcion }}</p>
+      <ul class="list-disc pl-6">
+        <li *ngFor="let servicio of corte?.incluye">{{ servicio }}</li>
+      </ul>
+      <button
+        class="text-black border-solid border-2 border-black w-32 h-12 mt-4 mx-auto block"
+        (click)="closeModal()"
+      >
+        Agendar
+      </button>
+    </article>
   </div>
 </div>

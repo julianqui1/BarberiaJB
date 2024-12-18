@@ -9,4 +9,15 @@ import { CORTES } from '../../data/cortes';
 })
 export class ServicioComponent {
   cortes: Cortes[] = CORTES;
+  selectedCorte: any = null; // Corte seleccionado para el diálogo
+  isDialogOpen = false; // Controla si el diálogo está abierto
+
+  openDialog(corte: any) {
+    this.selectedCorte = corte; // Asigna el corte seleccionado
+    this.isDialogOpen = true; // Abre el diálogo
+  }
+
+  closeDialog() {
+    this.isDialogOpen = false; // Cierra el diálogo
+  }
 }

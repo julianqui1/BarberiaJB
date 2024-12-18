@@ -18,14 +18,25 @@
     >
       <h3 class="text-center text-3xl">{{ corte.nombre }}</h3>
       <ul class="text-lg">
-        <!-- Limitar la cantidad de servicios mostrados -->
         <li *ngFor="let servicio of corte.incluye.slice(0, 5)">
           {{ servicio }}
         </li>
       </ul>
       <div class="py-4">
-        <app-servicio-dialogo></app-servicio-dialogo>
+        <button
+          class="text-black border-solid border-2 border-black w-32 h-12"
+          (click)="openDialog(corte)"
+        >
+          Más Info
+        </button>
       </div>
     </article>
   </section>
+
+  <!-- Diálogo de Servicios -->
+  <app-servicio-dialogo
+    [corte]="selectedCorte"
+    [isModalOpen]="isDialogOpen"
+    (close)="closeDialog()"
+  ></app-servicio-dialogo>
 </div>
