@@ -1,5 +1,5 @@
 <div
-  class="fixed inset-0 flex items-center justify-center bg-gray-800 bg-opacity-50 transition-opacity duration-300"
+  class="fixed inset-0 flex items-center justify-center bg-gray-800 bg-opacity-50 transition-opacity duration-300 z-10"
   [ngClass]="{ hidden: !isModalOpen, block: isModalOpen }"
 >
   <div class="bg-white rounded-lg shadow-lg w-3/5 p-6 flex flex-row">
@@ -16,12 +16,21 @@
       <ul class="list-disc pl-6">
         <li *ngFor="let servicio of corte?.incluye">{{ servicio }}</li>
       </ul>
-      <button
-        class="text-black border-solid border-2 border-black w-32 h-12 mt-4 mx-auto block"
-        (click)="closeModal()"
-      >
-        Agendar
-      </button>
+      <div class="flex flex-row">
+        <button
+          class="text-black border-solid border-2 border-black w-32 h-12 mt-4 mx-auto block"
+          (click)="closeModal()"
+        >
+          Agendar
+        </button>
+
+        <button
+          class="text-black border-solid border-2 border-black w-32 h-12 mt-4 mx-auto block"
+          (click)="closeModal()"
+        >
+          Cerrar
+        </button>
+      </div>
     </article>
   </div>
 </div>
