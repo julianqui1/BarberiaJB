@@ -7,5 +7,5 @@ import { BEBIDAS } from '../../data/bebidas';
   styleUrls: ['./bebidas.component.css'],
 })
 export class BebidasComponent {
-  bebidas = BEBIDAS.slice(0, 7);
+  bebidas = BEBIDAS.slice(0, 12);
 }
