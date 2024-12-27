@@ -9,6 +9,7 @@ import { UbicacionComponent } from './ubicacion/ubicacion.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { CardsModule } from '../cards/cards.module';
 import { ContactoComponent } from './contacto/contacto.component';
+import { CarrucelComponent } from '../shared/carrucel/carrucel.component';
 import { SharedModule } from '../shared/shared.module';
 
 @NgModule({

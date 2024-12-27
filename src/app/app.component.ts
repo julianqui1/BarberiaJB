@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Cortes } from './models/cortes.interfaces';
 import { CORTES } from './data/cortes';
+import { BEBIDAS } from './data/bebidas';
+import { PRODUCTOS } from './data/productos';
 
 @Component({
   selector: 'app-root',
@@ -13,4 +15,7 @@ export class AppComponent implements OnInit {
   cortes: Cortes[] = CORTES;
 
   ngOnInit(): void {}
+
+  bebidas = BEBIDAS.slice(0, 6);
+  productos = PRODUCTOS.slice(0, 6);
 }

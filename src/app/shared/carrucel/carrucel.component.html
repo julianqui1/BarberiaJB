@@ -1,41 +1,40 @@
-<div id="{{ carrucelId }}" class="carrucel slide" data-bs-ride="carrucel">
-  <div class="carrucel-inner">
+<div class="relative w-11/12 overflow-hidden mx-auto">
+  <!-- Contenedor del Carrusel -->
+  <div
+    class="flex transition-transform duration-1000 ease-in-out"
+    [style.transform]="'translateX(-' + currentIndex * 100 + '%)'"
+  >
+    <!-- Iteración de Items -->
     <div
-      *ngFor="let item of items; let i = index"
-      class="carrucel-item"
-      [class.active]="i === 0"
+      *ngFor="let item of items.slice(0, itemsToShow); let i = index"
+      class="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 px-2"
     >
-      <!-- Tu card reutilizable -->
-      <div class="w-80 h-60 mx-auto">
+      <div class="text-white rounded-lg shadow-md p-4">
         <img
-          class="rounded-lg w-full max-h-full object-cover"
-          [src]="item.image"
-          [alt]="item.title"
+          [src]="item.url_img"
+          [alt]="item.nombre"
+          class="w-full h-44 object-cover rounded-md"
         />
-        <div class="py-4">
-          <h3 class="text-slate-50 text-2xl">{{ item.title }}</h3>
-          <p class="text-gray-300">{{ item.description }}</p>
-          <p class="text-slate-50">${{ item.price }}</p>
-        </div>
+        <h3 class="text-2xl font-bold mt-4">{{ item.nombre }}</h3>
+        <p class="text-gray-300 mt-2">{{ item.descripcion }}</p>
+        <p class="text-lg font-semibold mt-2">{{ item.precio }}</p>
       </div>
     </div>
   </div>
+
+  <!-- Botón Anterior -->
   <button
-    class="carousel-control-prev"
-    type="button"
-    [attr.data-bs-target]="'#' + carrucelId"
-    data-bs-slide="prev"
+    (click)="prevSlide()"
+    class="absolute top-1/2 left-px transform -translate-y-1/2 text-white p-2 rounded-full text-6xl"
   >
-    <span class="carrucel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
+    &lt;
   </button>
+
+  <!-- Botón Siguiente -->
   <button
-    class="carrucel-control-next"
-    type="button"
-    [attr.data-bs-target]="'#' + carrucelId"
-    data-bs-slide="next"
+    (click)="nextSlide()"
+    class="absolute top-1/2 right-px transform -translate-y-1/2 text-white p-2 rounded-full text-6xl"
   >
-    <span class="carrucel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
+    &gt;
   </button>
 </div>
