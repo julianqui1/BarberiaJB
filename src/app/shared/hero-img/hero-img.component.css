@@ -1,0 +1,28 @@
+.bg-img {
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+
+.relative {
+  position: relative;
+  height: 100vh;
+}
+
+.bg-img::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.76);
+  z-index: 1;
+}
+
+.color {
+  color: white;
+  z-index: 2;
+}

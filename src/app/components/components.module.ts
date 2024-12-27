@@ -9,6 +9,7 @@ import { UbicacionComponent } from './ubicacion/ubicacion.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { CardsModule } from '../cards/cards.module';
 import { ContactoComponent } from './contacto/contacto.component';
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -29,8 +30,8 @@ import { ContactoComponent } from './contacto/contacto.component';
     ProductosComponent,
     HorarioComponent,
     UbicacionComponent,
-    ContactoComponent
+    ContactoComponent,
   ],
-  imports: [CommonModule, CardsModule],
+  imports: [CommonModule, CardsModule, SharedModule],
 })
 export class ComponentsModule {}
