@@ -3,3 +3,46 @@
   subtitle="Explora nuestra selección exclusiva de servicios que tenemos para proponerte este año"
   [backgroundImage]="'../../../assets/seccion-servicios.jpg'"
 ></app-hero-img>
+
+<section class="bg-zinc-950">
+  <p class="w-9/12 block m-auto text-slate-50 py-9 text-center">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Error ipsa amet,
+    tempora excepturi iusto quam assumenda dolores vel pariatur reiciendis totam
+    voluptate magnam sapiente officiis doloremque eius rerum delectus! Culpa?
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima sunt quas
+    aperiam ratione reiciendis saepe deleniti modi, ipsam neque dignissimos
+    similique. Obcaecati assumenda saepe, quidem mollitia consectetur alias
+    perspiciatis id!
+  </p>
+
+  <div class="flex flex-col">
+    <article
+      class="flex items-center justify-center py-4"
+      *ngFor="let corte of cortes"
+    >
+      <div class="bg-white rounded-lg shadow-lg w-3/5 p-6 flex flex-row">
+        <article class="w-full lg:w-2/5 p-2">
+          <img
+            [src]="corte.imagen"
+            [alt]="corte.nombre"
+            class="w-full h-full object-cover rounded-lg"
+          />
+        </article>
+        <article class="mx-4">
+          <h2 class="text-center text-3xl mb-4">{{ corte?.nombre }}</h2>
+          <p class="mb-4">{{ corte?.descripcion }}</p>
+          <ul class="list-disc pl-6">
+            <li *ngFor="let servicio of corte?.incluye">{{ servicio }}</li>
+          </ul>
+          <div class="flex flex-row">
+            <button
+              class="text-black border-solid border-2 border-black w-32 h-12 mt-4 mx-auto block"
+            >
+              Agendar
+            </button>
+          </div>
+        </article>
+      </div>
+    </article>
+  </div>
+</section>

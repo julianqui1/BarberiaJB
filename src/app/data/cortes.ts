@@ -5,7 +5,7 @@ export const CORTES: Cortes[] = [
     nombre: 'Corte Clásico',
     tipo_corte: 'Corte Recto',
     descripcion: 'Un estilo tradicional y limpio para cualquier ocasión.',
-    imagen: 'URL de la imagen',
+    imagen: '../assets/cortes-card/corte_clasico.jpg',
     incluye: [
       'Asesoría profesional',
       'Corte de cabello',
@@ -24,7 +24,7 @@ export const CORTES: Cortes[] = [
     nombre: 'Corte Degradado',
     tipo_corte: 'Fade',
     descripcion: 'Un degradado moderno con precisión y estilo.',
-    imagen: 'URL de la imagen',
+    imagen: '../assets/cortes-card/corte_degradado.jpg',
     incluye: [
       'Asesoría profesional',
       'Degradado personalizado',
@@ -43,7 +43,7 @@ export const CORTES: Cortes[] = [
     nombre: 'Corte Ejecutivo',
     tipo_corte: 'Corte Profesional',
     descripcion: 'Ideal para un look elegante y formal.',
-    imagen: 'URL de la imagen',
+    imagen: '../assets/cortes-card/corte_ejecutivo.jpg',
     incluye: [
       'Asesoría de estilo formal',
       'Corte de cabello profesional',
@@ -62,7 +62,7 @@ export const CORTES: Cortes[] = [
     nombre: 'Corte Juvenil',
     tipo_corte: 'Estilo Moderno',
     descripcion: 'Estilo fresco y dinámico, perfecto para jóvenes.',
-    imagen: 'URL de la imagen',
+    imagen: '../assets/cortes-card/corte_juvenil.jpg',
     incluye: [
       'Asesoría profesional para looks modernos',
       'Corte de cabello personalizado',
@@ -81,7 +81,7 @@ export const CORTES: Cortes[] = [
     nombre: 'Barba Completa',
     tipo_corte: 'Cuidado de Barba',
     descripcion: 'Afeitado completo o diseño a tu medida.',
-    imagen: 'URL de la imagen',
+    imagen: '../assets/cortes-card/barba_completa.jpg',
     incluye: [
       'Asesoría de diseño de barba',
       'Afeitado o recorte con navaja',
@@ -100,7 +100,7 @@ export const CORTES: Cortes[] = [
     nombre: 'Corte Kids',
     tipo_corte: 'Infantil',
     descripcion: 'Corte diseñado para niños, rápido y seguro.',
-    imagen: 'URL de la imagen',
+    imagen: '../assets/cortes-card/corte_kid.jpg',
     incluye: [
       'Asesoría para cortes infantiles',
       'Corte de cabello seguro y rápido',
@@ -119,7 +119,7 @@ export const CORTES: Cortes[] = [
     nombre: 'Corte VIP',
     tipo_corte: 'Personalizado',
     descripcion: 'Un servicio exclusivo y totalmente personalizado.',
-    imagen: 'URL de la imagen',
+    imagen: '../assets/cortes-card/corte_vip.jpg',
     incluye: [
       'Asesoría profesional personalizada',
       'Corte de cabello premium',
