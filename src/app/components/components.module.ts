@@ -11,6 +11,7 @@ import { CardsModule } from '../cards/cards.module';
 import { ContactoComponent } from './contacto/contacto.component';
 import { CarrucelComponent } from '../shared/carrucel/carrucel.component';
 import { SharedModule } from '../shared/shared.module';
+import { MainComponent } from './main/main.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { SharedModule } from '../shared/shared.module';
     UbicacionComponent,
     WelcomeComponent,
     ContactoComponent,
+    MainComponent,
   ],
   exports: [
     BebidasComponent,

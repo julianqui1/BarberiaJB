@@ -3,3 +3,11 @@
   subtitle="Explora nuestra selección exclusiva con nuestra gran gama y variedad de productos para todos nuestros clientes"
   [backgroundImage]="'../../../assets/seccion-productos.jpg'"
 ></app-hero-img>
+
+<section class="md:px-12 lg:px-56 bg-zinc-950 py-8">
+  <div
+    class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6"
+  >
+    <app-card *ngFor="let producto of productos" [data]="producto"></app-card>
+  </div>
+</section>
