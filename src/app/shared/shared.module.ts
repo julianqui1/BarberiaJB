@@ -14,7 +14,11 @@ import { HeroImgComponent } from './hero-img/hero-img.component';
     HeroImgComponent,
   ],
   imports: [CommonModule, CardsModule],
-  exports: [HeaderComponent, CarrucelComponent, HeroImgComponent],
-
+  exports: [
+    HeaderComponent,
+    CarrucelComponent,
+    HeroImgComponent,
+    FooterComponent,
+  ],
 })
 export class SharedModule {}
