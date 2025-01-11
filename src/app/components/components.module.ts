@@ -34,6 +34,7 @@ import { MainComponent } from './main/main.component';
     HorarioComponent,
     UbicacionComponent,
     ContactoComponent,
+    MainComponent,
   ],
   imports: [CommonModule, CardsModule, SharedModule],
 })
