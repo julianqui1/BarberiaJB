@@ -4,10 +4,20 @@
   [backgroundImage]="'../../../assets/seccion-productos.jpg'"
 ></app-hero-img>
 
-<section class="md:px-12 lg:px-36 bg-zinc-950 py-8">
-  <div
-    class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6"
-  >
+<section
+  class="bg-zinc-950 m-auto py-8 bg-zinc-950 w-full border-b-2 border-white px-[10%] sm:px-[8%] md:px-[10%] lg:px-[10%] bg-zinc-950 py-8"
+>
+  <p class="text-slate-50 py-9 text-center">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Error ipsa amet,
+    tempora excepturi iusto quam assumenda dolores vel pariatur reiciendis totam
+    voluptate magnam sapiente officiis doloremque eius rerum delectus! Culpa?
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima sunt quas
+    aperiam ratione reiciendis saepe deleniti modi, ipsam neque dignissimos
+    similique. Obcaecati assumenda saepe, quidem mollitia consectetur alias
+    perspiciatis id!
+  </p>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
     <app-card *ngFor="let producto of productos" [data]="producto"></app-card>
   </div>
 </section>

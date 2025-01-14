@@ -1,11 +1,11 @@
 <div class="flex flex-wrap justify-center gap-4">
   <!-- Contenedor de cada sección -->
   <section
-    class="bg-gray-300 flex flex-col lg:flex-row p-4 w-[90%] md:w-[90%] lg:w-[45%] m-2 h-auto rounded-lg"
+    class="bg-gray-300 flex flex-col md:flex-row lg:flex-row p-4 w-[90%] lg:w-[45%] lg:w-[45%] m-2 h-auto rounded-lg"
     *ngFor="let corte of cortes"
   >
     <!-- Imagen -->
-    <article class="w-full lg:w-2/5 p-2">
+    <article class="w-full md:w-2/5 p-2">
       <img
         [src]="corte.imagen"
         [alt]="corte.nombre"
@@ -14,7 +14,7 @@
     </article>
     <!-- Texto -->
     <article
-      class="p-4 flex flex-col justify-center items-center w-full lg:w-3/5"
+      class="p-4 flex flex-col justify-center items-center w-full md:w-3/5"
     >
       <h3 class="text-center text-3xl">{{ corte.nombre }}</h3>
       <ul class="text-lg">
