@@ -8,7 +8,7 @@ import { Component, Input, OnInit, OnDestroy } from '@angular/core';
 export class CarrucelComponent implements OnInit, OnDestroy {
   @Input() items: any[] = [];
   currentIndex = 0;
-  itemsToShow = 9;
+  itemsToShow = 12;
 
   private autoSlideInterval: any; // Almacena el intervalo
 
