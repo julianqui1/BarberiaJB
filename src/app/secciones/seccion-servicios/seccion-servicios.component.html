@@ -1,27 +1,33 @@
 <app-hero-img
-  title="Servicios JB"
+  title="Cortes JB"
   subtitle="Explora nuestra selección exclusiva de servicios que tenemos para proponerte este año"
   [backgroundImage]="'../../../assets/seccion-servicios.jpg'"
 ></app-hero-img>
 
-<section class="bg-zinc-950">
-  <p class="w-9/12 block m-auto text-slate-50 py-9 text-center">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Error ipsa amet,
-    tempora excepturi iusto quam assumenda dolores vel pariatur reiciendis totam
-    voluptate magnam sapiente officiis doloremque eius rerum delectus! Culpa?
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima sunt quas
-    aperiam ratione reiciendis saepe deleniti modi, ipsam neque dignissimos
-    similique. Obcaecati assumenda saepe, quidem mollitia consectetur alias
-    perspiciatis id!
-  </p>
+<section
+  class="bg-zinc-950 m-auto py-8 bg-zinc-950 w-full border-b-2 border-white"
+>
+  <article class="px-[10%] sm:px-[8%] md:px-[10%] lg:px-[10%]">
+    <p class="text-slate-50 py-9 text-center">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Error ipsa amet,
+      tempora excepturi iusto quam assumenda dolores vel pariatur reiciendis
+      totam voluptate magnam sapiente officiis doloremque eius rerum delectus!
+      Culpa? Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+      sunt quas aperiam ratione reiciendis saepe deleniti modi, ipsam neque
+      dignissimos similique. Obcaecati assumenda saepe, quidem mollitia
+      consectetur alias perspiciatis id!
+    </p>
+  </article>
 
   <div class="flex flex-col">
     <article
       class="flex items-center justify-center py-4"
       *ngFor="let corte of cortes"
     >
-      <div class="bg-white rounded-lg shadow-lg w-3/5 p-6 flex flex-row">
-        <article class="w-full lg:w-2/5 p-2">
+      <div
+        class="bg-white rounded-lg shadow-lg w-4/5 lg:w-3/5 p-6 flex flex-col lg:flex-row"
+      >
+        <article class="w-full lg:w-2/4 p-2">
           <img
             [src]="corte.imagen"
             [alt]="corte.nombre"
