@@ -3,5 +3,5 @@
     url("../../../assets/cafe-bar.jpg");
   background-size: cover;
   background-position: center;
-  min-height: auto;
+  height: auto;
 }

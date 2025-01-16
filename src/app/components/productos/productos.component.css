@@ -3,5 +3,5 @@
     url("../../../assets/productos/fondo_productos.jpg");
   background-size: cover;
   background-position: center;
-  min-height: auto;
+  height: auto;
 }

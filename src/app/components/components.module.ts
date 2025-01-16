@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { BebidasComponent } from './bebidas/bebidas.component';
 import { HorarioComponent } from './horario/horario.component';
@@ -12,6 +12,10 @@ import { ContactoComponent } from './contacto/contacto.component';
 import { CarrucelComponent } from '../shared/carrucel/carrucel.component';
 import { SharedModule } from '../shared/shared.module';
 import { MainComponent } from './main/main.component';
+import { SliderComponent } from './slider/slider.component';
+import { register } from 'swiper/element/bundle';
+// register Swiper custom elements
+register();
 
 @NgModule({
   declarations: [
@@ -24,6 +28,7 @@ import { MainComponent } from './main/main.component';
     WelcomeComponent,
     ContactoComponent,
     MainComponent,
+    SliderComponent,
   ],
   exports: [
     BebidasComponent,
@@ -35,7 +40,9 @@ import { MainComponent } from './main/main.component';
     UbicacionComponent,
     ContactoComponent,
     MainComponent,
+    SliderComponent,
   ],
   imports: [CommonModule, CardsModule, SharedModule],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA], // Permite usar elementos personalizados como <swiper>
 })
 export class ComponentsModule {}
