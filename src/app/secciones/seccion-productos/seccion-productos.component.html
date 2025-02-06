@@ -7,17 +7,25 @@
 <section
   class="bg-zinc-950 m-auto py-8 bg-zinc-950 w-full border-b-2 border-white px-[10%] sm:px-[8%] md:px-[10%] lg:px-[10%] bg-zinc-950 py-8"
 >
-  <p class="text-slate-50 py-9 text-center">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Error ipsa amet,
-    tempora excepturi iusto quam assumenda dolores vel pariatur reiciendis totam
-    voluptate magnam sapiente officiis doloremque eius rerum delectus! Culpa?
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima sunt quas
-    aperiam ratione reiciendis saepe deleniti modi, ipsam neque dignissimos
-    similique. Obcaecati assumenda saepe, quidem mollitia consectetur alias
-    perspiciatis id!
+  <p
+    class="text-base sm:text-lg text-center text-slate-50 pb-6"
+    data-aos="fade-down"
+  >
+    En Barbería JB, sabemos que el cuidado personal no termina en el corte de
+    cabello. Por eso, te ofrecemos una variedad de productos de belleza de alta
+    calidad, pensados para mantener tu estilo siempre en su mejor versión. Desde
+    productos para el cabello hasta lociones y cremas para el cuidado de la
+    piel, cada uno de nuestros productos está seleccionado para brindarte
+    resultados excepcionales. <br /><br />
+    Explora nuestro catálogo y encuentra lo que necesitas para seguir luciendo
+    perfecto en todo momento.
   </p>
 
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-    <app-card *ngFor="let producto of productos" [data]="producto"></app-card>
+    <app-card
+      *ngFor="let producto of productos"
+      [data]="producto"
+      data-aos="zoom-out-up"
+    ></app-card>
   </div>
 </section>
