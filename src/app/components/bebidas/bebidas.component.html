@@ -15,7 +15,11 @@
       compañía en cada sorbo!
     </p>
   </section>
-  <swiper-container class="slider-bebidas w-full mx-auto">
+  <swiper-container
+    autoplay-delay="2000"
+    loop="true"
+    class="slider-bebidas w-full mx-auto"
+  >
     <swiper-slide
       *ngFor="let bebida of bebidas; let i = index"
       class="swiper-slide flex justify-center items-center"

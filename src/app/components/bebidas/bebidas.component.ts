@@ -15,10 +15,10 @@ export class BebidasComponent implements OnInit {
     const swiperElemBebidas = document.querySelector('.slider-bebidas');
     const bebidasOptions: SwiperOptions = {
       slidesPerView: 1,
-      pagination: {
-        el: '.slider-bebidas-pagination',
-        clickable: true,
-      },
+      //pagination: {
+      //el: '.slider-bebidas-pagination',
+      //clickable: true,
+      //},
       navigation: {
         nextEl: '.slider-bebidas-next',
         prevEl: '.slider-bebidas-prev',

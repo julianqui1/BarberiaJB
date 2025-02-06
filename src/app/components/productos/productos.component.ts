@@ -15,13 +15,10 @@ export class ProductosComponent implements OnInit {
     const swiperElemProductos = document.querySelector('.slider-productos');
     const productosOptions: SwiperOptions = {
       slidesPerView: 1,
-      pagination: {
-        el: '.slider-productos-pagination',
-        clickable: true,
-      },
       navigation: {
         nextEl: '.slider-productos-next',
         prevEl: '.slider-productos-prev',
+        enabled: true,
       },
       breakpoints: {
         640: {

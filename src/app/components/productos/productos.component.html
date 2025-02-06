@@ -15,7 +15,11 @@
       deseas.
     </p>
   </section>
-  <swiper-container class="slider-productos w-full mx-auto">
+  <swiper-container
+    class="slider-productos w-full mx-auto"
+    autoplay-delay="2000"
+    loop="true"
+  >
     <swiper-slide
       *ngFor="let producto of productos; let i = index"
       class="swiper-slide flex justify-center items-center"
