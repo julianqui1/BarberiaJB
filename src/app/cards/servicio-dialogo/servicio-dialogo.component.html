@@ -2,30 +2,33 @@
   class="fixed inset-0 flex items-center justify-center bg-gray-800 bg-opacity-50 transition-opacity duration-300 z-10"
   [ngClass]="{ hidden: !isModalOpen, block: isModalOpen }"
 >
-  <div class="bg-white rounded-lg shadow-lg w-3/5 p-6 flex flex-row">
+  <div
+    class="bg-white rounded-lg shadow-lg w-[90%] sm:w-4/5 md:w-3/5 p-6 flex flex-col lg:flex-row"
+  >
+    <!-- Imagen -->
     <article class="w-full lg:w-2/5 p-2">
       <img
         [src]="corte?.imagen"
         [alt]="corte?.nombre"
-        class="w-full h-full object-cover rounded-lg"
+        class="w-full h-auto object-cover rounded-lg"
       />
     </article>
-    <article class="mx-4">
-      <h2 class="text-center text-3xl mb-4">{{ corte?.nombre }}</h2>
-      <p class="mb-4">{{ corte?.descripcion }}</p>
-      <ul class="list-disc pl-6">
+    <!-- Texto -->
+    <article class="mx-4 text-center lg:text-left">
+      <h2 class="text-2xl md:text-3xl mb-4">{{ corte?.nombre }}</h2>
+      <p class="mb-4 text-sm md:text-base">{{ corte?.descripcion }}</p>
+      <ul class="list-disc pl-6 text-sm md:text-base">
         <li *ngFor="let servicio of corte?.incluye">{{ servicio }}</li>
       </ul>
-      <div class="flex flex-row">
+      <div class="flex sm:flex-row justify-center lg:justify-start gap-4 mt-4">
         <button
-          class="text-black border-solid border-2 border-black w-32 h-12 mt-4 mx-auto block"
+          class="text-black border-2 border-black w-32 h-12"
           (click)="closeModal()"
         >
           Agendar
         </button>
-
         <button
-          class="text-black border-solid border-2 border-black w-32 h-12 mt-4 mx-auto block"
+          class="text-black border-2 border-black w-32 h-12"
           (click)="closeModal()"
         >
           Cerrar
