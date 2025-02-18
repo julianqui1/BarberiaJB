@@ -21,12 +21,13 @@
         <li *ngFor="let servicio of corte?.incluye">{{ servicio }}</li>
       </ul>
       <div class="flex sm:flex-row justify-center lg:justify-start gap-4 mt-4">
-        <button
+        <app-whatsapp-btn></app-whatsapp-btn>
+        <!-- <button
           class="text-black border-2 border-black w-32 h-12"
           (click)="closeModal()"
         >
           Agendar
-        </button>
+        </button> -->
         <button
           class="text-black border-2 border-black w-32 h-12"
           (click)="closeModal()"

@@ -1,0 +1,13 @@
+<a
+  [href]="whatsappUrl"
+  target="_blank"
+  [ngClass]="{
+    'border-black bg-zinc-950 text-black hover:bg-black hover:text-white hover:border-white':
+      !isReversed,
+    'border-white bg-zinc-950 text-white hover:bg-white hover:text-black hover:border-black':
+      isReversed
+  }"
+  class="flex items-center justify-center w-32 h-12 border-2 transition"
+>
+  Agendar
+</a>
