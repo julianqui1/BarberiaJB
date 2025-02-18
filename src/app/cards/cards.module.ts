@@ -6,6 +6,7 @@ import { BebidaComponent } from './bebida/bebida.component';
 import { ProductoComponent } from './producto/producto.component';
 import { ServicioDialogoComponent } from './servicio-dialogo/servicio-dialogo.component';
 import { CardComponent } from './card/card.component';
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,7 @@ import { CardComponent } from './card/card.component';
     ServicioDialogoComponent,
     CardComponent,
   ],
-  imports: [CommonModule],
+  imports: [CommonModule, SharedModule],
   exports: [
     BebidaComponent,
     ServicioComponent,

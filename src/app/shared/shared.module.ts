@@ -6,6 +6,7 @@ import { FooterComponent } from './footer/footer.component';
 import { CarrucelComponent } from './carrucel/carrucel.component';
 import { CardsModule } from '../cards/cards.module';
 import { HeroImgComponent } from './hero-img/hero-img.component';
+import { WhatsappBtnComponent } from './whatsapp-btn/whatsapp-btn.component';
 
 //No olvidar para la proxima tambine importar el modulo de RouterModule en hared.module.ts
 @NgModule({
@@ -14,13 +15,15 @@ import { HeroImgComponent } from './hero-img/hero-img.component';
     FooterComponent,
     CarrucelComponent,
     HeroImgComponent,
+    WhatsappBtnComponent,
   ],
-  imports: [CommonModule, CardsModule, RouterModule],
+  imports: [CommonModule, RouterModule],
   exports: [
     HeaderComponent,
     CarrucelComponent,
     HeroImgComponent,
     FooterComponent,
+    WhatsappBtnComponent,
   ],
 })
 export class SharedModule {}
