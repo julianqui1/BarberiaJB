@@ -17,7 +17,7 @@
       increíble. <br />
       <br />
       Descubre el corte que mejor se adapte a ti y déjanos hacerte brillar con
-      estilo. >
+      estilo.
     </p>
   </article>
 
@@ -43,11 +43,7 @@
             <li *ngFor="let servicio of corte?.incluye">{{ servicio }}</li>
           </ul>
           <div class="flex flex-row">
-            <button
-              class="text-black border-solid border-2 border-black w-32 h-12 mt-4 mx-auto block hover:bg-gray-200"
-            >
-              Agendar
-            </button>
+            <app-whatsapp-btn></app-whatsapp-btn>
           </div>
         </article>
       </div>
